@@ -1,9 +1,9 @@
 function Nav(){
     return(
-        <nav>
+        <div className="card">
             <h1>Its My Website</h1>
             <button>Menu</button>
-        </nav>
+        </div>
     )
 }
 export default Nav;
