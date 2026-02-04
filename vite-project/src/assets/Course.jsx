@@ -5,7 +5,7 @@ function Course(){
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>JavaaaaScript</li>
+                <li>JavaScript</li>
                 <li>ReactJS</li>
                 <li>NodeJS</li>
                 
