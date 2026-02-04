@@ -1,7 +1,7 @@
 function Nav(){
     return(
         <nav>
-            <h1>Its My Clone</h1>
+            <h1>Its My Website</h1>
             <button>Menu</button>
         </nav>
     )
