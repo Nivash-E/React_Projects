@@ -8,7 +8,6 @@ function Course(){
                 <li>typescript</li>
                 <li>ReactJS</li>
                 <li>NodeJS</li>
-                <li> Kavin   </li>
                 
             </ul>
         </div>
