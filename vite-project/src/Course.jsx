@@ -1,7 +1,11 @@
+
 const Course1="HTML";
 function Course(){
+     const styles={
+        backgroundColor:"green"
+     }
     return(
-        <div>
+        <div style={styles}>
             <h1>My Courses</h1>
             <ul>
                 <li>{Course1}</li>
@@ -12,7 +16,7 @@ function Course(){
                 
             </ul>
         </div>
-    )
+    );
 }
 
 export default Course;
