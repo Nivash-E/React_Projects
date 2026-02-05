@@ -1,22 +1,30 @@
+import PropTypes from 'prop-types';
 
-const Course1="HTML";
-function Course(){
-     const styles={
-        backgroundColor:"green"
-     }
-    return(
-        <div style={styles}>
-            <h1>My Courses</h1>
-            <ul>
-                <li>{Course1}</li>
-                <li>CSS</li>
-                <li>typescript</li>
-                <li>ReactJS</li>
-                <li>NodeJS</li>
-                
-            </ul>
+function Course(props){
+
+    if(props.show==true){
+           return(
+        <div className="card">
+            <img src={props.img} alt="" />
+            <h3>{props.name}</h3>
+             <p>{props.price}</p>
+             <span>{props.rating}</span>
         </div>
     );
 }
+else{
+    return(
+        <div className="card">Course Not Available</div>
+    )
+}
+    }
+
+Course.propTypes = {
+  name: PropTypes.string,
+  rating: PropTypes.number,
+  show: PropTypes.bool
+};
+
+
 
 export default Course;
