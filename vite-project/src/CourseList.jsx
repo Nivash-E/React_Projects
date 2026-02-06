@@ -24,12 +24,6 @@ function CourseList(){
                 img: Three,
                 rating : 4.8
             },
-            {
-                name: "Sivan Frame4",
-                price: "$400",
-                img: Three,
-                rating : 4.9
-            }
         ]
 
         const courseList = courses.map((course) =><Course name={course.name}
