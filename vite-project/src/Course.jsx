@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 
 function Course(props){
-
-    if(props.show==true){
            return(
         <div className="card">
             <img src={props.img} alt="" />
@@ -11,19 +9,9 @@ function Course(props){
              <span>{props.rating}</span>
         </div>
     );
-}
-else{
-    return(
-        <div className="card">Course Not Available</div>
-    )
-}
+
     }
 
-Course.propTypes = {
-  name: PropTypes.string,
-  rating: PropTypes.number,
-  show: PropTypes.bool
-};
 
 
 
