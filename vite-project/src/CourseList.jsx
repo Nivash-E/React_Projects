@@ -7,18 +7,21 @@ function CourseList(){
     
         const courses = [
             {
+                id:1,
                 name: "Sivan Frame1",
                 price: "$100",
                 img: One,
                 rating : 4.5
             },
             {
+                id:2,
                 name: "Sivan Frame2",
                 price: "$200",
                 img: Two,
                 rating : 4.2
             },
             {  
+                id:3,
                 name: "Sivan Frame3",
                 price: "$300",
                 img: Three,
@@ -26,7 +29,7 @@ function CourseList(){
             },
         ]
 
-        const courseList = courses.map((course) =><Course name={course.name}
+        const courseList = courses.map((course) =><Course key={course.id} name={course.name}
          price={course.price} img={course.img}
           rating={course.rating}/>)
     return(
