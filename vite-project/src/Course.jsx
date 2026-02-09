@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function Course(props){
            return(
-        props.name &&<div className="card">
+        <div className="card">
             <img src={props.img} alt="" />
             <h3>{props.name}</h3>
              <p>{props.price}</p>
@@ -12,7 +12,12 @@ function Course(props){
 
     }
 
-
+Course.propTypes = {
+    name : PropTypes.string,
+    price : PropTypes.number,
+    img : PropTypes.string,
+    rating : PropTypes.number
+}
 
 
 export default Course;

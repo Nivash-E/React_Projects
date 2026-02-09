@@ -80,6 +80,8 @@ function CourseList(){
         frames.sort((a,b) => b.rating - a.rating);
 
         const topPriceFrames = frames.filter(course => course.price >= 300);
+        
+        
 
         const courseList = topPriceFrames.map((course,index) =><Course key={index} name={course.name}
          price={course.price} img={course.img}
